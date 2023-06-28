@@ -14,10 +14,10 @@ const {backgroundColor} = defineProps({
 
 <template>
     <div 
-    :class="`${backgroundColor} drop-shadow-md shadow-lg rounded-sm p-4 flex justify-center w-3/4 mx-auto`"
+    :class="`container ${backgroundColor} drop-shadow-md shadow-lg rounded-sm p-4 flex justify-center mx-auto`"
    >
         <img 
-        class="object-contain rounded-sm max-w-2xl max-h-[40rem]" :src="chosenAnimal" 
+        class="object-contain rounded-sm max-w-xs sm:max-w-md md:max-w-lg xl:max-w-2xl max-h-[40rem]" :src="chosenAnimal" 
         alt="animal" />
     </div>
 </template>
